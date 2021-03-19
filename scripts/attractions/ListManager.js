@@ -22,11 +22,12 @@ export const attractionCard = (attractionId) => {
             <p>${item.city}, ${item.state}</p>
 
             <p class="para">${item.description}</p>
-            <div id="natParksDetails" class="modal">
+            <button id="bizarreDetails" class="bizarreDetails">Details</button>
+            
             <div id="bizDetails" class="modal">
 
             <!-- Modal content -->
-            <div class="modal-content">
+                <div class="modal-content">
                 <ul><h3>Important Details</h3>
                     <li>Diaper Facility: ${item.ameneties.diaperFacility ? "Yes" : "No" }</li>
                     <li>Playground: ${item.ameneties.playground ? "Yes":"No"}</li>
@@ -36,7 +37,7 @@ export const attractionCard = (attractionId) => {
              </div>
 
             </div>
-            <button id="bizarreDetails" class="bizarreDetails">Details</button>
+            
             `
             document.querySelector(".bizarreCard").innerHTML = attractionHTML
         }
